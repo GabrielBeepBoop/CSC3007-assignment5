@@ -1,0 +1,13 @@
+#map {
+    width: 900px;
+    height: 600px;
+    float:left;
+}
+* {
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+}
+#mapLegend{
+    float:right;
+}
