@@ -1,5 +1,12 @@
 var scaleFactor = 50
-let tiles = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+// Leaflet tiles
+let tiles = new L.tileLayer('https://maps-{s}.onemap.sg/v3/Default/{z}/{x}/{y}.png', {
+    detectRetina: true,
+    //Do not remove this attribution
+    attribution: '<img src="https://docs.onemap.sg/maps/images/oneMap64-01.png" style="height:20px;width:20px;">' +
+                'New OneMap | Map data © contributors, <a href="http://SLA.gov.sg">Singapore Land Authority</a>'
+  });
+     
 
 // Display the map
 let map = new L.Map("map", {
